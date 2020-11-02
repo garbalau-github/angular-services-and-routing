@@ -1,0 +1,13 @@
+<div class="row">
+  <div class="col-12">
+    <ul class="list-group">
+      <li *ngFor="let collectable of collectables" class="list-group-item">
+        <div>
+          <button (click)="onAddToCollection(collectable)" class="btn btn-success">Add to Collection</button>&nbsp;
+          <span>{{ collectable.description }}</span>
+        </div>
+        <span class="badge">{{ collectable.type }}</span>
+      </li>
+    </ul>
+  </div>
+</div>
